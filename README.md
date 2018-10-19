@@ -1,3 +1,12 @@
+# How To
+
+```
+pip3 install pyltp, flask
+curl -O http://ospm9rsnd.bkt.clouddn.com/model/ltp_data_v3.4.0.zip
+mv ltp_data_v3.4.0 ltp_data
+python3 serve.py
+```
+
 # EventTriplesExtraction
    EventTriplesExtraction based on dependency parser and semantic role labeling, 基于依存句法与语义角色标注的事件三元组抽取
    文本表示一直是个重要问题，如何以清晰，简介的方式对一个文本信息进行有效表示是个长远的任务  
