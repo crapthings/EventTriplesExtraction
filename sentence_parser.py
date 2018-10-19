@@ -65,14 +65,3 @@ class LtpParser:
         child_dict_list, format_parse_list = self.build_parse_child_dict(words, postags, arcs)
         roles_dict = self.format_labelrole(words, postags)
         return words, postags, child_dict_list, roles_dict, format_parse_list
-
-
-if __name__ == '__main__':
-    parse = LtpParser()
-    sentence = '李克强总理今天来我家了,我感到非常荣幸'
-    words, postags, child_dict_list, roles_dict, format_parse_list = parse.parser_main(sentence)
-    print(words, len(words))
-    print(postags, len(postags))
-    print(child_dict_list, len(child_dict_list))
-    print(roles_dict)
-    print(format_parse_list, len(format_parse_list))
