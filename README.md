@@ -3,11 +3,11 @@
 ```
 git clone --depth 1 https://github.com/crapthings/EventTriplesExtraction
 cd EventTriplesExtraction
-pip install pyltp flask
+pip3 install pyltp flask
 curl -O http://ospm9rsnd.bkt.clouddn.com/model/ltp_data_v3.4.0.zip
 unzip ltp_data_v3.4.0.zip -d .
 mv ltp_data_v3.4.0 ltp_data
-python serve.py
+python3 serve.py
 ```
 
 # EventTriplesExtraction
