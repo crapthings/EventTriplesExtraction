@@ -10,7 +10,8 @@ class LtpParser:
     def __init__(self):
         LTP_DIR = "./ltp_data"
         self.segmentor = Segmentor()
-        self.segmentor.load(os.path.join(LTP_DIR, "cws.model"))
+        # self.segmentor.load(os.path.join(LTP_DIR, "cws.model"))
+        self.segmentor.load_with_lexicon(os.path.join(LTP_DIR, "cws.model"), './dict.txt')
 
         self.postagger = Postagger()
         self.postagger.load(os.path.join(LTP_DIR, "pos.model"))
